@@ -1,0 +1,44 @@
+<div class="content">
+    <h2>Reservas</h2>
+    <button class="btn btn-primary mb-3" onclick="showAddReservationForm()">Add Reserva</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Hospede</th>
+                <th>Quarto</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="reservationTableBody">
+            <!-- Reservas serão carregadas aqui -->
+        </tbody>
+    </table>
+</div>
+
+<div id="reservationFormModal" style="display:none;">
+    <h3 id="formTitle">Add Reserva</h3>
+    <form id="reservationForm">
+        <input type="hidden" id="reservationId">
+        <div class="mb-3">
+            <label for="reservationGuest" class="form-label">Hospede</label>
+            <input type="text" class="form-control" id="reservationGuest" required>
+        </div>
+        <div class="mb-3">
+            <label for="reservationRoom" class="form-label">Quarto</label>
+            <input type="text" class="form-control" id="reservationRoom" required>
+        </div>
+        <div class="mb-3">
+            <label for="reservationCheckIn" class="form-label">Check-in</label>
+            <input type="date" class="form-control" id="reservationCheckIn" required>
+        </div>
+        <div class="mb-3">
+            <label for="reservationCheckOut" class="form-label">Check-out</label>
+            <input type="date" class="form-control" id="reservationCheckOut" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-secondary" onclick="closeReservationForm()">Cancelar</button>
+    </form>
+</div>

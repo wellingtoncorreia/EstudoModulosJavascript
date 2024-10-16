@@ -1,0 +1,38 @@
+ // Carregar o header
+ fetch('/componentes/navbar.html')
+ .then(response => response.text())
+ .then(data => {
+     document.getElementById('header').innerHTML = data;
+ });
+
+  // Carregar o inicio
+  fetch('/componentes/inicio.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('inicio').innerHTML = data;
+  });
+  // Carregar o quartos
+  fetch('/componentes/quartos.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('quartos').innerHTML = data;
+  });
+  // Carregar o hospede
+  fetch('/componentes/hospedes.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('hospedes').innerHTML = data;
+  });
+  // Carregar o reserva
+  fetch('/componentes/reservas.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('reservas').innerHTML = data;
+  });
+
+ // Carregar o footer
+ fetch('/componentes/footer.html')
+ .then(response => response.text())
+ .then(data => {
+     document.getElementById('footer').innerHTML = data;
+ });

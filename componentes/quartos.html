@@ -1,0 +1,34 @@
+<div class="content">
+    <h2>Quartos</h2>
+    <button class="btn btn-primary mb-3" onclick="showAddRoomForm()">Add Quarto</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Numero</th>
+                <th>Tipo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="roomTableBody">
+            <!-- Quartos serão carregados aqui -->
+        </tbody>
+    </table>
+</div>
+
+<div id="roomFormModal" style="display:none;">
+    <h3 id="formTitle">Add Quarto</h3>
+    <form id="roomForm">
+        <input type="hidden" id="roomId">
+        <div class="mb-3">
+            <label for="roomNumber" class="form-label">Numero</label>
+            <input type="text" class="form-control" id="roomNumber" required>
+        </div>
+        <div class="mb-3">
+            <label for="roomType" class="form-label">Tipo</label>
+            <input type="text" class="form-control" id="roomType" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-secondary" onclick="closeRoomForm()">Cancelar</button>
+    </form>
+</div>
