@@ -1,2 +1,2 @@
 import { carregarComponente } from "./imports.js";
-carregarComponente('inicio', '/componentes/inicio.html');
+carregarComponente('inicio', './componentes/inicio.html');
