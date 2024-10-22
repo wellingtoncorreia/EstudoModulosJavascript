@@ -8,5 +8,5 @@ export function carregarComponente(id, url) {
         .catch(error => console.error(`Erro ao carregar o componente ${url}: `, error));
 }
 
-carregarComponente('header', '/componentes/navbar.html');
-carregarComponente('footer', '/componentes/footer.html');
+carregarComponente('header', './componentes/navbar.html');
+carregarComponente('footer', './componentes/footer.html');
